@@ -1,6 +1,6 @@
 import "./App.css";
 import { useEffect, useRef, useState } from "react";
-import { getUrl } from "./links.js";
+import { getUrl, _CATS } from "./links.js";
 
 
 function Category({ cat_no }) {
@@ -64,12 +64,14 @@ function Category({ cat_no }) {
 }
 
 function App() {
-  const categories = [<Category />];
+  
+  console.log(_CATS);
+ 
   return (
     <div className="category-list">
-      <Category cat_no={10} />
-      <Category cat_no={1} />
-      <Category cat_no={2} />
+     {
+      _CATS.map((x)=> <Category cat_no={x} />)
+     }
     </div>
   );
 }
