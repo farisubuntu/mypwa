@@ -1,5 +1,4 @@
-const main_url=
-'https://raw.githubusercontent.com/farisubuntu/urdu-course/main/data/';
+const main_url='https://raw.githubusercontent.com/farisubuntu/urdu-course/main/data/';
 // const main_url='https://raw.githubusercontent.com/farisubuntu/urdu-course/main/data/10/10.json';
 // lesson raw : https://raw.githubusercontent.com/farisubuntu/urdu-course/main/data/10/1001.json
 function getBaseUrl(){
